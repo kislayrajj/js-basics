@@ -1,0 +1,47 @@
+body{
+    background: black;
+    color: white;
+}
+.container {
+    color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card{
+    width: 100px;
+    height: 120px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 36px;
+    position: relative;
+
+}
+
+.add-card{
+    cursor: pointer;
+    color: rgb(27, 170, 27);
+    background-color: wheat;
+}
+
+.delete-button{
+    cursor: pointer;
+    color: red;
+    border: none;
+    border-bottom: 1px solid red;
+    border-radius: 100px;
+    background: transparent;
+    position: absolute;
+    top: 8px;
+    right: 3px;
+   transition: all .1s ease-in-out;
+}
+
+.delete-button:hover{
+    background: red;
+    color: white;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Events</h1>
+    <div style="display: flex; flex-direction: column; gap: 40px">
+      <div tabindex="0" class="keyboard_evt">Keyboard Events</div>
+      <div tabindex="0" class="mouse" style="border: 2px solid hotpink">
+        <div>Mouse Events</div>
+        <div>Mouse child</div>
+      </div>
+      <div>
+        <div>Event Bubbling and Event Capturing</div>
+        <div>
+          <div class="green" style="background-color: green; padding: 30px">
+            <div class="pink" style="background-color: hotpink; padding: 30px">
+              <div
+                class="blue"
+                style="background-color: blue; padding: 30px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>Event Simulation</div>
+      <div>Event Delegation</div>
+    </div>
+  </body>
+</html>
