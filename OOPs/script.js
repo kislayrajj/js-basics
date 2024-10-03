@@ -38,20 +38,25 @@
 // constructor fn name is conventionally start with capital letter
 
 // A constructor function in JavaScript is a regular function used to create and initialize objects.
-function CreateUser(firstName,lastName,age){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-}
+// function CreateUser(firstName,lastName,age){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+// }
 
  
-CreateUser.prototype.getBirthYear= function(){
-    return new Date().getFullYear() - this.age;
-}
+// CreateUser.prototype.getBirthYear= function(){
+//     return new Date().getFullYear() - this.age;
+// }
 
-//When called with the new keyword, it constructs a new object and assigns this to refer to that new object. 
+// //When called with the new keyword, it constructs a new object and assigns this to refer to that new object. 
 
-const user1 = new CreateUser("John", "Doe", 30);
-const user2 = new CreateUser("Robert", "Parker", 53);
-console.log(user1)
-console.log(user2)
+// const user1 = new CreateUser("John", "Doe", 30);
+// const user2 = new CreateUser("Robert", "Parker", 53);
+// console.log(user1)
+// console.log(user2)
+
+
+// ---------- CLASSES ------------------------------
+
+ 
