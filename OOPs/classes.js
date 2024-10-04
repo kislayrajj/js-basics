@@ -63,43 +63,47 @@
 
 // -------- Getters and Setters --------- 
 
-class CreateUser {
-  constructor(firstName, lastName, age) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-  }
+// class CreateUser {
+//   constructor(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//   }
 
 
-  getBirthYear() {
-    return new Date().getFullYear() - this.age;
-  }
+//   getBirthYear() {
+//     return new Date().getFullYear() - this.age;
+//   }
 
-   get fullName() {
-    return `${this?.firstName} ${this?.lastName || ""}` ;
-  }
+//    get fullName() {
+//     return `${this?.firstName} ${this?.lastName || ""}` ;
+//   }
 
-  set fullName(value){
-    const [firstName, lastName] = value.split(" ");
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-}
-
-const user1 = new CreateUser("John", "Doe", 78);
-const user2 = new CreateUser("Peter", "Parker", 18);
-
-
-
-// const user = {
-//   firstName: "John",
-//   lastName: "Doe",
-//   get fullName() {
-//     return `${this.firstName} ${this.lastName}`;
-//   },
-//   set fullName(value) {
+//   set fullName(value){
 //     const [firstName, lastName] = value.split(" ");
 //     this.firstName = firstName;
 //     this.lastName = lastName;
-//   },
-// };
+//   }
+// }
+
+// const user1 = new CreateUser("John", "Doe", 78);
+// const user2 = new CreateUser("Peter", "Parker", 18);
+
+
+
+// // const user = {
+// //   firstName: "John",
+// //   lastName: "Doe",
+// //   get fullName() {
+// //     return `${this.firstName} ${this.lastName}`;
+// //   },
+// //   set fullName(value) {
+// //     const [firstName, lastName] = value.split(" ");
+// //     this.firstName = firstName;
+// //     this.lastName = lastName;
+// //   },
+// // };
+
+
+// ---------- "this" Keyword --------------------
+
